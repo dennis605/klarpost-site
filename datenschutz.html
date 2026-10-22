@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — klarpost</title>
+<meta name="description" content="Wie klarpost mit deinen Daten umgeht — on-device, ohne Tracking.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">klarpost</a>
+        <div class="links">
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">Nutzungsbedingungen</a>
+        <a href="support.html">Support</a>
+        </div>
+      </nav>
+    <main>
+<h1>Datenschutzerklärung</h1>
+<p><strong>Stand: 2026-10-23</strong></p>
+<h2>1. Verantwortlicher</h2>
+<p>Verantwortlich für die Datenverarbeitung in der App „KLARPOST" ist:</p>
+<p>Dennis Schönig<br>
+wird ergänzt<br>
+wird ergänzt<br>
+Deutschland</p>
+<p><strong>E-Mail:</strong> wird ergänzt</p>
+<h2>2. Übersicht</h2>
+<p>KLARPOST ist nach dem Prinzip „Local-first" gebaut: Scans, Texterkennung (OCR) und KI-Analyse laufen direkt auf deinem Gerät. Personenbezogene Daten verlassen dein Gerät standardmäßig nicht.</p>
+<p>Diese Erklärung beschreibt transparent, welche Daten wo und zu welchem Zweck verarbeitet werden.</p>
+<h2>3. Welche Daten werden erhoben?</h2>
+<h3>3.1 Auf deinem Gerät (kein Server-Upload)</h3>
+<p>Wenn du die App nutzt, werden folgende Daten <strong>lokal und verschlüsselt</strong> auf deinem Gerät gespeichert:</p>
+<ul>
+<li>Gescannte Bilder deiner Briefe (verschlüsselt im App-Speicher)</li>
+<li>OCR-Volltext der Briefe</li>
+<li>Pseudonymisierte Fassungen der Texte</li>
+<li>Ergebnisse der KI-Analyse (Zusammenfassung, Fristen, Beträge, Handlungsoptionen)</li>
+<li>Erinnerungen für den Fristen-Wächter</li>
+</ul>
+<p>Diese Daten liegen in einer verschlüsselten lokalen Datenbank. Sie verlassen dein Gerät nicht, weder an uns noch an Dritte.</p>
+<h3>3.2 Free-Tier ohne Account</h3>
+<p>Wenn du die App ohne Registrierung nutzt (Free-Tier, kein Konto), werden <strong>keinerlei personenbezogene Daten</strong> an uns übertragen. Es entsteht kein Nutzerkonto, keine E-Mail-Adresse, kein Profil. Du bleibst anonym.</p>
+<h3>3.3 Pro-Tier mit Synchronisation (opt-in)</h3>
+<p>Wenn du das kostenpflichtige Pro-Abo nutzt und die optionale Cloud-Synchronisation aktivierst, werden zusätzlich übertragen:</p>
+<ul>
+<li>Deine Konto-E-Mail (über unseren Authentifizierungsdienst)</li>
+<li>Verschlüsselte Synchronisations-Pakete (XChaCha20-Poly1305) mit Brief-Metadaten und Analysen</li>
+</ul>
+<p>Der Verschlüsselungs-Key wird aus deiner Passphrase abgeleitet. Wir können den Inhalt dieser Pakete <strong>nicht lesen</strong>.</p>
+<h3>3.4 In-App-Käufe und Abonnement</h3>
+<p>In-App-Käufe und Abonnements laufen über Apple App Store und RevenueCat. Wir erhalten ausschließlich:</p>
+<ul>
+<li>Ob du ein aktives Pro-Abo hast (ja / nein)</li>
+<li>Ablaufdatum des Abos</li>
+<li>Eine anonyme Gerätekennung für die Quota-Berechnung</li>
+</ul>
+<p>Deine Zahlungsdaten (Kreditkarte, Bankverbindung) liegen <strong>ausschließlich bei Apple</strong>. Wir haben keinen Zugriff darauf.</p>
+<h3>3.5 On-device-KI (Apple Foundation Models, iOS 26+)</h3>
+<p>Auf unterstützten Geräten (iOS 26 oder neuer mit aktiviertem Apple Intelligence) erfolgt die Briefanalyse durch die Apple Foundation Models direkt auf dem Gerät. Es werden <strong>keinerlei Daten an Apple übermittelt</strong> — die Apple Foundation Models sind ein System-Service, der lokal auf deinem Gerät läuft.</p>
+<h3>3.6 VPS-Backend-Fallback</h3>
+<p>Falls dein Gerät die on-device-KI nicht unterstützt (älteres iOS, Android), wird der pseudonymisierte Brieftext an unseren Server übertragen, um eine Analyse zu erstellen. Vor dem Versand werden Empfänger-Name, Adresse, IBAN, Telefonnummer und ähnliche personenbezogene Daten automatisch durch Platzhalter ersetzt.</p>
+<p>In diesem Fall werden verarbeitet:</p>
+<ul>
+<li>Pseudonymisierter Brieftext</li>
+<li>Sprache des Briefs</li>
+<li>SHA-256-Hash des Textes (für Wiedererkennung und Cache-Optimierung)</li>
+<li>Anonyme Gerätekennung (Quota-Abrechnung)</li>
+<li>Integritäts-Token (Schutz gegen Skript-Missbrauch)</li>
+</ul>
+<h2>4. Zweck der Verarbeitung und Rechtsgrundlage</h2>
+<table>
+<thead>
+<tr><th>Daten</th><th>Zweck</th><th>Rechtsgrundlage</th></tr>
+</thead>
+<tbody>
+<tr><td>Lokale Scans / Texte</td><td>Brief-Analyse, Fristen-Wächter</td><td>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</td></tr>
+<tr><td>Pro-Konto und Sync-Daten</td><td>Authentifizierung, Synchronisation</td><td>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</td></tr>
+<tr><td>Anonyme Quota-Counter</td><td>Missbrauchsschutz (Free-Tier-Limit)</td><td>Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)</td></tr>
+<tr><td>Pseudonymisierter Text ans Backend</td><td>KI-Analyse als Fallback</td><td>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</td></tr>
+<tr><td>Abo-Status</td><td>Bereitstellung der Pro-Funktionen</td><td>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</td></tr>
+</tbody>
+</table>
+<h2>5. Empfänger der Daten</h2>
+<ul>
+<li><strong>Lokal auf deinem Gerät:</strong> niemand außer dir</li>
+<li><strong>VPS-Fallback (wenn aktiv):</strong> pseudonymisierter Text an unseren eigenen Server in der EU (Hetzner, Standort Deutschland/EU); keine Weitergabe an Dritte, keine Trainingsverwendung</li>
+<li><strong>Apple / RevenueCat:</strong> nur Abo-Status und Quota-Counter, niemals Briefinhalte</li>
+<li><strong>Apple Foundation Models (on-device):</strong> keine Daten verlassen das Gerät</li>
+</ul>
+<h2>6. Drittlandtransfer</h2>
+<p>Standardmäßig findet kein Transfer in Drittländer statt. Im VPS-Fallback-Pfad wird pseudonymisierter Text an einen Server in der EU übertragen. Sollte künftig ein Anbieter außerhalb des EWR eingesetzt werden, informieren wir dich vorab und schließen die erforderlichen Standardvertragsklauseln (SCC) ab.</p>
+<h2>7. Speicherdauer und Löschung</h2>
+<ul>
+<li><strong>Lokale Daten</strong> bleiben so lange auf deinem Gerät, bis du sie selbst löschst (Brief löschen oder die Funktion „Alle Daten löschen" in den Einstellungen).</li>
+<li><strong>„Alle Daten löschen"</strong> entfernt unwiderruflich: lokale Datenbank, Scan-Dateien, Verschlüsselungs-Schlüssel, Cache und geplante Benachrichtigungen sowie ggf. serverseitige Sync-Datensätze.</li>
+<li><strong>Serverseitige Logs:</strong> pseudonymisierte Hashes und Token-Zähler, 30 Tage.</li>
+<li><strong>Abo-Daten bei Apple / RevenueCat:</strong> gemäß deren Aufbewahrungsfristen.</li>
+</ul>
+<h2>8. Deine Rechte</h2>
+<p>Du hast jederzeit das Recht auf:</p>
+<ul>
+<li><strong>Auskunft</strong> (Art. 15 DSGVO) — welche Daten wir über dich haben</li>
+<li><strong>Berichtigung</strong> (Art. 16 DSGVO)</li>
+<li><strong>Löschung</strong> (Art. 17 DSGVO) — vereinfacht über die Funktion „Alle Daten löschen"</li>
+<li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+<li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO) — wir können pseudonymisierte Pakete aus dem Sync liefern</li>
+<li><strong>Widerspruch</strong> (Art. 21 DSGVO)</li>
+<li><strong>Widerruf einer Einwilligung</strong> (Art. 7 Abs. 3 DSGVO) — mit Wirkung für die Zukunft</li>
+</ul>
+<p>Zur Ausübung dieser Rechte genügt eine E-Mail an wird ergänzt.</p>
+<h2>9. Beschwerderecht bei der Aufsichtsbehörde</h2>
+<p>Du hast das Recht, Beschwerde bei der zuständigen Datenschutz-Aufsichtsbehörde einzulegen. Zuständig ist in der Regel die Behörde deines Wohnorts. Da die App aus Deutschland heraus angeboten wird, ist die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) eine zuständige übergeordnete Anlaufstelle; ergänzend ist die für dein Bundesland zuständige Landesbehörde erreichbar.</p>
+<p><strong>Kontakt BfDI:</strong> &lt;https://www.bfdi.bund.de&gt;</p>
+<h2>10. Stand und Änderungen</h2>
+<p>Dieser Stand der Datenschutzerklärung ist 30. August 2026. Wesentliche Änderungen werden in der App angezeigt und über die Versionshinweise kommuniziert.</p>
+<hr>
+<p><strong>Verwandte Dokumente:</strong></p>
+<ul>
+<li>Impressum: <a href="./imprint.md">./imprint.md</a></li>
+<li>Nutzungsbedingungen (AGB): <a href="./terms.md">./terms.md</a></li>
+</ul>
+
+    </main>
+    <footer>
+      <p>klarpost — der KI-Dolmetscher für Behördenpost.<br>
+      Kein Rechtsberatungsangebot. Informationen ohne Gewähr.</p>
+    </footer>
+</body>
+</html>
